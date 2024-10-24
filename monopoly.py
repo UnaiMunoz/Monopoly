@@ -98,8 +98,8 @@ class Casilla:
         self.precioComprarCasa = precioComprarCasa
         self.precioComprarHotel = precioComprarHotel
 
-    def __str__(self):
-        return self.nombre  
+    def __repr__(self):
+        return self.nombre
 
     def tipoCasilla(self):
         return self.tipo
@@ -446,7 +446,7 @@ class Monopoly:
                     elif opciones == "9":
                         if casilla in jugador.propiedades:
                             while True:
-                                opcion = input("A quin jugador s'ho vols vendre (color)")
+                                opcion = input("A quin jugador s'ho vols vendre (color): ")
                                 if opcion in ["Vermell", "Groc", "Blau", "Taronja"]:
                                     break
                                 else:
