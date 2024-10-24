@@ -101,9 +101,6 @@ class Casilla:
     def __str__(self):
         return self.nombre  
 
-    def __repr__(self):
-        return self.nombre
-
     def tipoCasilla(self):
         return self.tipo
     
